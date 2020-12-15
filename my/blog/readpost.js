@@ -8,8 +8,10 @@ function readPost(postname) {
 		photoPath = `/_data/blog/noimage.svg`;
 	};
 	var postImageSvg = geturl(photoPath);
+	var posturl = new URL("/my/blog/readpost.html", location.origin);
+	posturl.searchParams.set("postname", postname);
 	var html = `
-  <h1>${postMeta["title"]}</h1>
+  <a href="${posturl.href}"><h2>${postMeta["title"]}</h2></a>
   <p>published ${postMeta["published-human"]}</p>
   ${postImageSvg}
   <div id="post-content">${postContent}</div>
