@@ -1,5 +1,6 @@
 {
   "md5sum":"1c2d8b7ffbec8e702c1d7a76bbfe9642",
   "name":"stuff volume 1",
-  "format":"7zip"
+  "format":"7zip",
+  "extension":"7z"
 }

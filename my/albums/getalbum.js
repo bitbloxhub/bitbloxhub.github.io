@@ -5,7 +5,7 @@ function albumDownload(albumname) {
     <h1>${albumMeta["name"]}</h1>
     <p> in format ${albumMeta["format"]}</p>
     <p> md5sum:${albumMeta["md5sum"]} </p>
-    <a href="/_data/albums/${albumname}/album" download>download now!</a>
+    <a href="/_data/albums/${albumname}/album.${albumMeta["extension"]}" download>download now!</a>
   `;
   return html;
 };
