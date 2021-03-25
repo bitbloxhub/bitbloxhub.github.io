@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "stuff volume 2",
+  "cover": "/_data/albums/stuff volume 2/cover.svg",
+  "dloptions": [
+    {
+      "url": "https://github.com/bitbloxhub/bitbloxhub/releases/download/stuff-vol-2/album.zip",
+      "info": "full download"
+    }
+  ]
+}

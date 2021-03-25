@@ -20,7 +20,7 @@ function albumDownload(albumname) {
       <h2>Downloads</h2>
     `;
     dloptions.forEach((dloption, i) => {
-      html+=`<a href="${dloption["url"]}>${dloption["info"]}</a>"`;
+      html+=`<a href="${dloption["url"]}>${dloption["info"]}</a>`;
     });
   };
   return html;
