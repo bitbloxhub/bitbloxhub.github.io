@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["index.ts"],
+  "sourcesContent": ["let profile = document.querySelector(\"#profile\")\nprofile.addEventListener(\"click\", () => {\n    profile.classList.add(\"animate-bounce\")\n})"],
+  "mappings": "AAAA,GAAI,SAAU,SAAS,cAAc,YACrC,QAAQ,iBAAiB,QAAS,IAAM,CACpC,QAAQ,UAAU,IAAI",
+  "names": []
+}
