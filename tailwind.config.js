@@ -1,7 +1,12 @@
 module.exports = {
     content: ["index.ejs", "index.ts"],
     theme: {
-      extend: {},
+      extend: {
+          fontFamily: {
+              "roboto": ["Roboto", "sans-serif"],
+              "pacifico": ["Pacifico", "cursive"]
+          }
+      },
     },
     plugins: [],
   }
