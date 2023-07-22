@@ -1,0 +1,10 @@
+html {
+	@apply font-sans;
+}
+
+code,
+kbd,
+samp,
+pre {
+	@apply font-mono;
+}
