@@ -14,5 +14,6 @@ export default defineConfig({
 	],
 	experimental: {
 		viewTransitions: true
-	}
+	},
+	trailingSlash: "always"
 })
