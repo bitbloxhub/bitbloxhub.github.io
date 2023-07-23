@@ -1,5 +1,8 @@
 ---
-const { title, url } = Astro.props
+const { title, url, minutesRead, pubDate } = Astro.props
 ---
 
-<li><a href={url}>{title}</a></li>
+<li>
+	<a href={url}>{title}</a> <br />
+	approximately {minutesRead}, published {pubDate.slice(0,10)}
+</li>

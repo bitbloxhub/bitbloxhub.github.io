@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config"
 import svelte from "@astrojs/svelte"
 import UnoCSS from "unocss/astro"
 import mdx from "@astrojs/mdx"
+import { remarkReadingTime } from "./remark-reading-time.mjs"
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,5 +16,8 @@ export default defineConfig({
 	experimental: {
 		viewTransitions: true
 	},
-	trailingSlash: "always"
+	trailingSlash: "always",
+	markdown: {
+		remarkPlugins: [remarkReadingTime]
+	}
 })
