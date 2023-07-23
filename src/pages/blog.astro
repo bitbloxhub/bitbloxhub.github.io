@@ -7,7 +7,7 @@ const pageTitle = "bitbloxhub's blog"
 	<main class="m-auto p-6 max-w-6xl text-left">
 		<h1>bitbloxhub's blog!</h1>
 		<ul class="text-base">
-			{allPosts.map((post) => <li ><a href={post.url} rel="prefetch-intent">{post.frontmatter.title}</a></li>)}
+			{allPosts.map((post) => <li ><a href={post.url}>{post.frontmatter.title}</a></li>)}
 		</ul>
 	</main>
 </Layout>
