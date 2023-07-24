@@ -4,5 +4,5 @@ const { title, url, minutesRead, pubDate } = Astro.props
 
 <li>
 	<a href={url}>{title}</a> <br />
-	Approximately {minutesRead}, published {pubDate.slice(0,10)}
+	Approximately {minutesRead}, published {pubDate.toISOString().slice(0,10)}
 </li>

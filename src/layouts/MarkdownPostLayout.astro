@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props
 	<main class="m-auto p-6 max-w-6xl text-left">
 		<h1>{frontmatter.title}</h1>
 		<p>Written by {frontmatter.author}</p>
-		<p>Published on {frontmatter.pubDate.slice(0,10)}</p>
+		<p>Published on {frontmatter.pubDate.toISOString().slice(0,10)}</p>
 		<p>Approximately {frontmatter.minutesRead}</p>
 		<slot />
 	</main>

@@ -1,14 +1,15 @@
 ---
+import { getCollection } from "astro:content"
 import Layout from "../layouts/Layout.astro"
 import BlogPost from "../components/BlogPost.astro"
-const allPosts = await Astro.glob("../pages/posts/*.mdx")
+const allPosts = await getCollection("blog")
 const pageTitle = "bitbloxhub's blog"
 ---
 <Layout title={pageTitle}>
 	<main class="m-auto p-6 max-w-6xl text-left">
 		<h1>bitbloxhub's blog!</h1>
 		<ul class="text-base">
-			{allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} minutesRead={post.frontmatter.minutesRead} pubDate={post.frontmatter.pubDate} />)}
+			{allPosts.map((post) => <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} minutesRead={post.data.minutesRead} pubDate={post.data.pubDate} />)}
 		</ul>
 	</main>
 </Layout>

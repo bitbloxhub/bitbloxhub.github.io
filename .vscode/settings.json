@@ -1,5 +1,8 @@
 {
 	"yaml.schemas": {
 		"https://json.schemastore.org/github-workflow.json": "file:///mnt/wd-blue-2tb/home/jonahgam/bitbloxhub.github.io/.github/workflows/deploy.yaml"
+	},
+	"files.associations": {
+		"*.mdx": "markdown"
 	}
 }
