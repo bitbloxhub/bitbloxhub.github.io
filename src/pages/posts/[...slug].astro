@@ -10,8 +10,8 @@ export async function getStaticPaths() {
 }
 // 2. When it's time to render, you can get the entry directly from the prop
 const { entry } = Astro.props
-const { Content } = await entry.render()
+const { Content, remarkPluginFrontmatter } = await entry.render()
 ---
-<MarkdownPostLayout frontmatter={entry.data}>
+<MarkdownPostLayout frontmatter={entry.data} remarkPluginFrontmatter={remarkPluginFrontmatter}>
 	<Content />
 </MarkdownPostLayout>

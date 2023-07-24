@@ -1,8 +1,9 @@
 ---
-const { title, url, minutesRead, pubDate } = Astro.props
+const { title, url, pubDate, renderPromise } = Astro.props
+const { remarkPluginFrontmatter } = await renderPromise
 ---
 
 <li>
 	<a href={url}>{title}</a> <br />
-	Approximately {minutesRead}, published {pubDate.toISOString().slice(0,10)}
+	Approximately {remarkPluginFrontmatter.minutesRead}, published {pubDate.toISOString().slice(0,10)}
 </li>
